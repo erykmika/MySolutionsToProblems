@@ -5,12 +5,12 @@ public class Kata {
     If there is no index that would make this happen, return -1. 
     */
     public static int findEvenIndex(int[] arr) {
-      int sum = 0, left_sum = 0;
+      int sum = 0, leftSum = 0;
       for(int num : arr)
         sum += num;
       for(int i=0; i<arr.length; i++){
-        if(left_sum == sum - left_sum - arr[i]) return i;
-        left_sum += arr[i];
+        if(leftSum == sum - leftSum - arr[i]) return i;
+        leftSum += arr[i];
       }
       return -1;
     }
