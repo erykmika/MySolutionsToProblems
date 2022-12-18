@@ -36,11 +36,8 @@ class HalloweenSale {
 			currentPrice -= d;
 			if(currentPrice <= m) break;
 		}
-		while(s > 0)
-		{
-			s -= m;
-			if(s>=0) numberOfGames++;
-		}
+		if(s>0)
+			numberOfGames += s / m;
 			return numberOfGames;
 		}
 
